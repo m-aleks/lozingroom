@@ -1,17 +1,17 @@
 ﻿var gallerryLoadData ={
 	template: '<a href="{{link}}" class="imgBox__link" target="_blank"><img src="{{image}}" class="imgBox__img" /></a>'
-	/*,filter: function(image) {
-      return image.tags.indexOf('TAG_NAME') >= 0;
-  }*/
+	,filter: function(image) {
+      return image.tags.indexOf('ilovemyjob') >= 0;
+  }
 };
 
-var specialsLoadData ={
+/*var specialsLoadData ={
 	template: '<a href="{{link}}" class="imgBox__link" target="_blank"><img src="{{image}}" class="imgBox__img" /></a>'
 	,filter: function(image) {
-      return image.tags.indexOf('скидки') >= 0;
+      return image.tags.indexOf('specialoffer') >= 0;
   }
   ,resolution:"standard_resolution"
-};
+};*/
 
 var loadInsta = function(instaData) {
 	var div = document.createElement("div");

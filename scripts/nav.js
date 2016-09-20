@@ -30,7 +30,7 @@ function Nav(sId) {
 			break;
 			case "gallery": loadInsta(gallerryLoadData);
 			break;
-			case "specials": loadInsta(specialsLoadData);
+			case "specials": loadSpecials();
 			break;
 			case "contacts": insertContacts();
 			break;

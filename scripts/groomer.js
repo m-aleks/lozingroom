@@ -8,7 +8,7 @@
 		panel.className = ("imgBox__panel");
 		var img = document.createElement("img");
 		img.className = ("imgBox__diplom");
-		img.setAttribute("src", "../images/diplomas/" + i + ".jpg");
+		img.setAttribute("src", "images/diplomas/" + i + ".jpg");
 		panel.appendChild(img);
 		div.appendChild(panel);
 	}
