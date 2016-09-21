@@ -113,7 +113,6 @@ body{
 	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-/* Groomer */
 .preview{
 	position:fixed;
 	top:0;
@@ -136,30 +135,7 @@ max-width: 100%;
 max-height: 100%;
 vertical-align: middle;
 }
-/* Prices */
-.prices{
-	padding: 50px 80px;
-}
-.prices__list{
-	font-family: 'Open Sans', sans-serif;
-}
-.prices__heading{
-	font-weight: 600;
-	font-style: italic;
-	font-size: 2rem;
-	height:55px;
-	vertical-align: bottom;
-}
-.prices__service{
-	font-style: italic;
-}
-.prise__servise_name{
-	border-bottom: 1px dotted #c5e4e6;
-}
-.prise__service_toPay{
-	width:100px;
-}
-/* Gallery */
+/* Groomer */
 .imgBox{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -193,10 +169,35 @@ vertical-align: middle;
 	display:inline;
 	vertical-align: middle;
 }
-.imgBox__link{
-	display: block;
-	
+
+/* Prices */
+.prices{
+	padding: 50px 80px;
 }
+.prices__list{
+	font-family: 'Open Sans', sans-serif;
+}
+.prices__heading{
+	font-weight: 600;
+	font-style: italic;
+	font-size: 2rem;
+	height:55px;
+	vertical-align: bottom;
+}
+.prices__service{
+	font-style: italic;
+}
+.prise__servise_name{
+	border-bottom: 1px dotted #c5e4e6;
+}
+.prise__service_toPay{
+	width:100px;
+}
+/* Gallery */
+
+/* .imgBox__link{
+	display: block;
+} */
 .imgBox__img{
 	/* width:306px; */
 	max-width: 200px;
@@ -239,6 +240,7 @@ margin: 40px auto;
 @media only screen and (max-width: 1024px){
 	.prices,.contacts{padding: 10px;}
 	.specials__panel{width: 100%;}
+}
 @media only screen and (max-width: 735px){
 	.container{width:95vw;}
 }

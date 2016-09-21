@@ -23,7 +23,7 @@ function insertPrices(sPrices) {
 	var oRow
 	,oCell;
 	for(var priceString in priceStringsArray){
-		var priceArray = priceStringsArray[priceString].split(/\t/);
+		var priceArray = priceStringsArray[priceString].split(/_/);
 		oRow = priceTable.insertRow(-1);
 		oCell = oRow.insertCell(-1);
 		oCell.innerHTML = priceArray[0];

@@ -1,4 +1,14 @@
-﻿function Preview(oImg) {
+﻿function showPreview(event) {
+  var target = event.target;
+  if(target!=this){
+    if(target.tagName =="IMG"){
+      new Preview(target.cloneNode());
+    }else{
+      new Preview(target.firstChild.cloneNode());
+    }
+  }
+}
+function Preview(oImg) {
   var p = this;
   p.img = oImg;
   p.img.className = "preview__img";

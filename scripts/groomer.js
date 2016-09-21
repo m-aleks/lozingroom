@@ -13,17 +13,5 @@
 		div.appendChild(panel);
 	}
 
-	function showPreview(event) {
-		var target = event.target
-		,imgSrc;
-		if(target!=this){
-			if(target.tagName =="IMG"){
-				new Preview(target.cloneNode());
-			}else{
-				new Preview(target.firstChild.cloneNode());
-			}
-		}
-	}
-
 	div.onclick = showPreview;
 }

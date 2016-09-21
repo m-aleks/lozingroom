@@ -1,8 +1,10 @@
 ﻿var gallerryLoadData ={
-	template: '<a href="{{link}}" class="imgBox__link" target="_blank"><img src="{{image}}" class="imgBox__img" /></a>'
+	/*template: '<a href="{{link}}" class="imgBox__link" target="_blank"><img src="{{image}}" class="imgBox__img" /></a>'*/
+	template: '<div class="imgBox__panel"><img src="{{image}}" class="imgBox__diplom" /></div>'
 	,filter: function(image) {
       return image.tags.indexOf('ilovemyjob') >= 0;
   }
+  ,resolution:"standard_resolution"
 };
 
 /*var specialsLoadData ={
@@ -35,4 +37,6 @@ var loadInsta = function(instaData) {
 	var feed = new Instafeed(instaParams);
 
 	feed.run();
+
+	insta.onclick = showPreview;
 }
