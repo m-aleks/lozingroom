@@ -153,7 +153,8 @@ function Nav(sId) {
 	var n = document.getElementById(sId);
 	n.menu = this.fbc("sidebar__list");
 	n.link = this.fbc("sidebar__link");
-	n.toggle = this.fbc("toggle");
+	n.toggle = this.fbc("sidebar__toggle");
+	n.toggleLabel = this.fbc("toggle");
 
 	n.showHide = function(){
 		if(!n.classList.contains("sidebar-shown")){
@@ -164,9 +165,11 @@ function Nav(sId) {
 	}
 	n.show =function() {
 		n.classList.add("sidebar-shown");
+		n.toggleLabel[0].classList.add("toggle_close");
 	}
 	n.hide = function() {
 		n.classList.remove("sidebar-shown");
+		n.toggleLabel[0].classList.remove("toggle_close");
 	}
 	n.navItem = function(event) {
 		document.getElementsByClassName("container-main")[0].style.display = "none";

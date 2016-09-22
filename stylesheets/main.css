@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Marck+Script';
+@import 'https://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400i,600i';
 
 html{	
@@ -25,7 +25,7 @@ body{
 .sidebar-shown{
 	right:0 !important;
 }
-.sidebar__toggle{
+/* .sidebar__toggle{
 	position:relative;
 	top:1rem;
 	left:-6rem;
@@ -33,10 +33,58 @@ body{
 }
 .toggle{
 	font-size: 4rem;
-	color: #000;
+	color: #000; 
+}*/
+.sidebar__toggle{
+	position:relative;
+	top:1rem;
+	left:-6rem;
+	width:3.5rem;
+	height:3.5rem;
 }
-.toggle:hover{
+.sidebar__toggle:hover{
 	cursor: pointer;
+}
+.toggle{
+	display: block;
+	height:0.5rem;
+	width: 3.5rem;
+	position:relative;
+	top: 1.5rem;
+	background-color: #445c5c;
+	transition:all linear 0.5s;
+}
+.toggle:before{
+	content:'';
+	background-color: #445c5c;
+	transition:all linear 0.5s;
+	height:0.5rem;
+	width: 3.5rem;
+	position:absolute;
+	top:-1.5rem;
+}
+.toggle:after{
+	content:'';
+	background-color: #445c5c;
+	transition:all linear 0.5s;
+	height:0.5rem;
+	width: 3.5rem;
+	position:absolute;
+	bottom:-1.5rem;
+}
+.toggle_close{
+	height: 0;
+  transition: all linear 0.2s;
+}
+.toggle_close:before{
+	top: 0;
+  transition: all linear 0.5s;
+  transform:rotate(45deg);
+}
+.toggle_close:after{
+	top: 0;
+  transition: all linear 0.5s;
+  transform:rotate(-45deg);
 }
 
 .sidebar__list{
@@ -248,6 +296,6 @@ margin: 40px auto;
 	.prices__heading{font-size:1.2rem;}
 }
 
-@media only screen and (max-height: 800px){
-	.sidebar__list{margin:-5rem 0;}
+@media only screen and (max-height: 600px){
+	.sidebar__list{margin:-3rem 0;}
 }
